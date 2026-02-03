@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hunter x Hunter - Página Única</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -99,8 +99,11 @@ Un guerrero valiente que vive grandes aventuras y desafíos increíbles.
 
 <script>
 function toggleMenu() {
-    var menu = document.getElementById("menu");
-    menu.classList.toggle("mostrar");
+    var menus = document.querySelectorAll(".menu");
+
+    menus.forEach(function(menu) {
+        menu.classList.toggle("mostrar");
+    });
 }
 </script>
 
