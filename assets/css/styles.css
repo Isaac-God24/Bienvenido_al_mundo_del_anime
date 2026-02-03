@@ -50,3 +50,179 @@ nav a {
     text-decoration: none;
     font-size: 1.1rem;
 }
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    text-align: right;
+}
+
+/* ===== PAGINA INICIO ===== */
+.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10%;
+}
+
+/* ===== TITULO CON GLITCH ===== */
+.titulo {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1.2rem;
+
+    animation: glitch 1.2s infinite;
+}
+
+/* ===== BOTON ===== */
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background: darkgreen;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.8rem;
+}
+
+/* ===== INTRODUCCION ===== */
+.intro-contenido {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.intro-contenido img {
+    width: 28rem;
+    margin: 1.5rem 0;
+    max-width: 90%;
+}
+
+.intro-contenido p {
+    width: 60%;
+    margin: auto;
+    color: white;
+    font-size: 1.1rem;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* ===== PERSONAJE ===== */
+.personaje {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.personaje img {
+    width: 22rem;
+    margin-right: 2rem;
+    max-width: 80%;
+}
+
+.personaje p {
+    width: 40%;
+    color: white;
+    font-size: 1.1rem;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* ===== GALERIA ===== */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 5rem;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 16rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem black;
+
+    transition: all 0.4s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.15) rotate(3deg);
+    box-shadow: 0 0 2rem black;
+}
+
+/* ===== ANIMACION GLITCH ===== */
+@keyframes glitch {
+    0% {
+        text-shadow:
+            0.15rem 0.15rem #762020,
+           -0.15rem -0.15rem #12a9a9;
+    }
+    50% {
+        text-shadow:
+            0.15rem -0.15rem #030202,
+           -0.15rem 0.15rem #156969;
+    }
+    100% {
+        text-shadow:
+            0.15rem 0.15rem #6e2369,
+           -0.15rem -0.15rem #ad2056;
+    }
+}
+
+/* ===== RESPONSIVE PARA TABLETS ===== */
+@media (max-width: 64rem) {
+
+    .titulo {
+        font-size: 2.4rem;
+    }
+
+    .personaje {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .personaje p {
+        width: 80%;
+    }
+
+    .galeria img {
+        width: 14rem;
+    }
+}
+
+/* ===== RESPONSIVE PARA CELULARES ===== */
+@media (max-width: 40rem) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        width: 100%;
+    }
+
+    nav ul.mostrar {
+        display: block;
+    }
+
+    nav li {
+        display: block;
+        padding: 1rem 0;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .galeria img {
+        width: 12rem;
+    }
+}
+
+
+
+
+
