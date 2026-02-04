@@ -100,20 +100,19 @@ Un guerrero valiente que vive grandes aventuras y desafíos increíbles.
 
 <script>
 function toggleMenu() {
-    var menus = document.querySelectorAll(".menu");
-
-    menus.forEach(function(menu) {
-        menu.classList.toggle("mostrar");
-    });
+    var menu = document.getElementById("menu");
+    menu.classList.toggle("mostrar");
 }
+
+// Cerrar menú al tocar cualquier enlace
+var enlaces = document.querySelectorAll("#menu a");
+
+enlaces.forEach(function(enlace) {
+    enlace.addEventListener("click", function() {
+        document.getElementById("menu").classList.remove("mostrar");
+    });
+});
 </script>
-
-</body>
-</html>
-
-
-
-
 
 
 </body>

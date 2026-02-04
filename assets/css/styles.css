@@ -34,6 +34,12 @@ nav {
     background: rgba(0, 0, 0, 0.8);
     padding: 1rem;
     text-align: center;
+
+    position: fixed;      /* MENÚ SIEMPRE ARRIBA */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav ul {
@@ -57,6 +63,9 @@ nav a {
     color: white;
     cursor: pointer;
     text-align: right;
+
+    padding-top: 10px;      /* SEPARACIÓN SUPERIOR */
+    padding-right: 3rem; 
 }
 
 /* ===== PAGINA INICIO ===== */
@@ -105,6 +114,7 @@ nav a {
     color: white;
     font-size: 1.1rem;
     background: rgba(0, 0, 0, 0.8);
+
 }
 
 /* ===== PERSONAJE ===== */
